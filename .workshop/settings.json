@@ -1,0 +1,6 @@
+{
+  "techStack": "STATIC_REACT_ONLY",
+  "enabledPlugins": {
+    "frontend-design@workshop-plugins": true
+  }
+}

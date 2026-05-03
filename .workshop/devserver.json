@@ -1,0 +1,13 @@
+{
+  "version": 1,
+  "install": [
+    {"run": "bun install --frozen-lockfile 2>&1 || bun install 2>&1", "hash": "bun.lock", "sentinel": "node_modules/.install-hash"}
+  ],
+  "services": {
+    "frontend": {
+      "command": "bunx --bun vite --host 0.0.0.0 --port $APP_PORT --strictPort",
+      "port": "$APP_PORT"
+    }
+  },
+  "primary": "frontend"
+}
